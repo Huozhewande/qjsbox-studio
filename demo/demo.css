@@ -1,0 +1,24 @@
+html, body { margin: 0; background: var(--qs-surface); color: var(--qs-ink); }
+.demo { max-width: 1400px; margin: 0 auto; padding: 16px; display: grid; gap: 16px; font-family: var(--qs-font); font-size: 14px; }
+.demo a { color: var(--qs-accent); }
+.demo-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.demo-header h1 { margin: 0; font-size: 22px; }
+.demo-header p { margin: 4px 0 0; color: var(--qs-muted); max-width: 70ch; }
+.demo-actions { display: flex; gap: 8px; }
+.demo-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--qs-line); }
+.demo-tabs button { border: 0; border-bottom: 2px solid transparent; background: none; padding: 8px 14px; font: inherit; color: var(--qs-muted); cursor: pointer; }
+.demo-tabs button.is-active { color: var(--qs-ink); border-bottom-color: var(--qs-accent); font-weight: 600; }
+.demo-simulate-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.demo-simulate-input { display: grid; gap: 10px; align-content: start; }
+.demo-simulate-input .qs-field { display: flex; }
+.demo-simulate-input > .qs-button { justify-self: start; }
+.demo-status { margin: 0 0 8px; padding: 8px 12px; border-radius: var(--qs-radius); background: var(--qs-surface); }
+.demo-status.is-hit { background: var(--qs-true-soft); }
+.demo-status.is-unavailable, .demo-status.is-needs_server, .demo-status.is-invalid_flow { background: var(--qs-unavailable-soft); }
+.demo-steps { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.demo-steps li { display: flex; justify-content: space-between; gap: 12px; }
+.demo-steps em { font-style: normal; color: var(--qs-muted); }
+.demo-steps li.is-hit em { color: var(--qs-true); font-weight: 600; }
+.demo-steps li.is-unavailable em, .demo-steps li.is-needs_server em { color: var(--qs-unavailable); font-weight: 600; }
+.demo-footer { color: var(--qs-muted); font-size: 12px; text-align: center; padding: 8px 0 16px; }
+@media (max-width: 900px) { .demo-simulate-grid { grid-template-columns: minmax(0, 1fr); } }

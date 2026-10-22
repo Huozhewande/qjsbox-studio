@@ -1,0 +1,6 @@
+qjsbox-studio
+Copyright 2026 The qjsbox-studio Authors
+
+The distributed stylesheet (dist/qjsbox-studio.css) includes the base styles of
+React Flow (@xyflow/react), Copyright (c) 2019-2025 webkid GmbH, under the MIT
+License. See THIRD_PARTY_NOTICES.md.
